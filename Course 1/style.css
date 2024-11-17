@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #1a1a1a; /* Spooky background */
+    color: #f8f8f8; /* White text so we can see the text. */
+}
+
+.header {
+    text-align: center;
+    font-size: 2.5em;
+    color: #ff6347; /* Spoopy color, jk */
+    margin-bottom: 20px;
+}
+
+/* Flex container for sections */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1); /* Ghostly-ish background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Text on the left */
+.flex-item-text {
+    flex: 1 1 50%; /* Take 50% of the space */
+    padding: 10px;
+}
+
+/* Images on the right */
+.flex-item-img {
+    flex: 1 1 40%; /* Adjust size of the image container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Images */
+#rightImg {
+    width: 100%; 
+    max-width: 300px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Inline images in text */
+.intextImg {
+    width: 40px;
+    height: auto;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+/* Links */
+a {
+    color: #ff6347;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Headings */
+h2, h3 {
+    color: #ffbf00; /* Slightly different spooky shade for headings */
+    margin-bottom: 10px;
+}
+
+/* Paragraph styling */
+p {
+    margin-bottom: 15px;
+}
+
+/* Mobile compatibility */
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-item-text, .flex-item-img {
+        flex: 1 1 100%;
+    }
+
+    #rightImg {
+        max-width: 80%;
+    }
+}
