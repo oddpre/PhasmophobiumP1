@@ -14,7 +14,7 @@ body {
 
 .header {
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2.5em; /* For reference, approx 40px */
     color: #ff6347; /* Spoopy color, jk */
     margin-bottom: 20px;
 }
