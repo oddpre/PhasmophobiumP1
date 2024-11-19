@@ -81,9 +81,19 @@ h2, h3 {
     margin-bottom: 10px;
 }
 
+.subheader {
+    color:#ff6347;
+    text-align:center;
+}
+
 /* Paragraph styling */
 p {
     margin-bottom: 15px;
+}
+
+/* As suggested by instructor, list-style-type: none for the evidence. */
+li {
+    list-style-type: none;
 }
 
 /* Mobile compatibility */
