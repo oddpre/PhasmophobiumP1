@@ -27,14 +27,18 @@ body {
     margin: 20px 0;
     padding: 10px;
     background: rgba(255, 255, 255, 0.1); /* Ghostly-ish background */
-    border-radius: 10px;
+    border-radius: 45px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    width:1600px; /* Just a provisional design for now. Easier on the eyes for me but needs an additional improvement. */
+    align-items: center;
 }
 
 /* Text on the left */
 .flex-item-text {
     flex: 1 1 50%; /* Take 50% of the space */
     padding: 10px;
+    justify-content:center;
+    align-items:center;
 }
 
 /* Images on the right */
@@ -58,6 +62,8 @@ body {
 
 /* Inline images in text */
 .intextImg {
+    background-color:red; /* Certainly not the best color choice, but it's at least more visible now. Try other colors as time passes. */
+    box-shadow: 1px 1px 1px 1px pink;
     width: 40px;
     height: auto;
     margin-left: 5px;
